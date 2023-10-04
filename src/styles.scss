@@ -4,16 +4,20 @@
 }
 
 body {
+  background: rgb(23, 31, 104);
   background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 1%,
-    /* rgba(116, 9, 121, 1) 43%, */ rgba(0, 212, 255, 1) 80%
+    0deg,
+    rgba(23, 31, 104, 1) 0%,
+    rgba(86, 108, 164, 1) 100%
   );
   color: hsl(200, 100%, 90%);
   max-width: 700px;
   height: 700px;
   padding: 1rem;
   margin: 0 auto;
+}
+.box {
+  min-height: 30em;
 }
 
 .new-item-form {
@@ -28,6 +32,12 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.1rem;
+}
+.form-row > label {
+  color: blue;
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 3em;
 }
 
 .btn {
