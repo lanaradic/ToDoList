@@ -1,4 +1,3 @@
-import React from "react";
 import { useEffect, useState } from "react";
 import { NewTodoForm } from "./NewTodoForm";
 import "./styles.scss";
@@ -45,9 +44,6 @@ export default function App() {
 
   return (
     <div className="box">
-      <div className="icon">
-        <img src="../public/sticky-notes.png" height="60px"></img>
-      </div>
       <h1 className="header">***To do list***</h1>
       <TodoList todos={todos} toggleTodo={toggleTodo} deleteTodo={deleteTodo} />
       <NewTodoForm onSubmit={addTodo} />
